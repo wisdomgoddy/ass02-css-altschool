@@ -1,0 +1,281 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+}
+
+body {font-family: 'Inter', sans-serif;
+font-family: 'Lato', sans-serif;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-section {
+    /* width: 1440px;
+    width: 80%
+    height: 80%
+    height: 840px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* flex: 1; */
+    /* flex-direction: row;  */
+    /* justify-content: center;   align-items: center; */
+}
+.left-section {
+    margin-inline-start: 140px;
+    margin-block-start: 205px;
+    margin-block-end: 360px;
+    width: 460px;
+    height: 275px;
+    /* background-color: rgba(255, 255, 255, 1); */
+
+    img {
+        height: 80px;
+        width: 77px;
+        /* padding: 0; */
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 50px;
+        color: rgba(0,11,10,1);
+        margin-block-start: 50px;
+        margin-block-end: 20px;
+    }
+    p {
+        font-size: 16px;
+        font-style: normal;
+        line-height: 25px;
+        font-weight: 400;
+        width: 460px;
+        color: rgba(115, 115, 115, 1);
+    }
+}
+
+.right-section {
+    height: 685px;
+    width: 580px;
+    border-radius: 6px;
+    background-color: white;
+    margin-inline: 120px;
+    
+    padding: 40px;
+    flex-shrink: 0;
+    /* margin-inline-start: 120px;
+    margin-inline-end: 140px; */
+    /* margin-block: 80px; */
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+}
+ .form-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+ }
+
+ label {
+    display: flex;
+    color: rgba(1, 28, 52, 1);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 159px; 
+    letter-spacing: 0.1px;
+} 
+input,select {
+    width: 238px;
+    height: 48px;
+    flex-shrink: 0;
+    padding-inline-start: 16px;
+    padding-block: 14px;
+    /* border-radius: 0.1px; */
+
+}
+
+input:hover {
+    border: 1px solid rgba(46, 196, 182, 1);
+}
+
+::placeholder {
+    width: 170px;
+    height: 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300px;
+    letter-spacing: 0.2px;
+}
+
+button {
+    width: 500px;
+    height: 48px;
+    flex-shrink: 0;
+    color: white;
+    background-color: rgba(46, 196, 182, 1);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    border: 0px;
+    margin-top: 30px;
+
+    }
+    .terms {
+        font-size: 14px;
+        color: black;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: center;
+        margin-top: 16px;
+
+        a {
+            font-weight: 500px;
+            color: rgba(46, 196, 182, 1);
+        }
+    }
+    
+   #activity-select {
+        width: 500px;
+        height: 48px;
+        padding-block: 14px;
+        padding-left: 16px;
+
+        option{
+        width: 432px;
+        height: 20px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300px;
+        letter-spacing: 0.2px;
+        color: rgba(115, 115, 115, 1);
+        }
+    }
+
+    .password-select {
+        width: 500px;
+        height: 48px;
+    }
+
+    @media screen and (max-width: 900px) {
+        .full-section {
+            flex-direction: column;
+        }
+        .left-section {
+            /* margin-top: 50px; */
+            /* margin-inline: 100px; */
+             width: 500px; 
+             margin-block-start: 190px;
+             margin-block-end: 80px;
+             margin-inline-start: 50px;
+
+             h1 {
+                font-size: 30px;
+             }
+
+             }
+            /* align-items: center;
+            justify-content: center; */
+
+            .right-section{
+                align-content: center;
+                justify-content: center;
+                margin-top: 10px;
+                width: 440px;
+                /* width: 295px; */
+                height: 1048px;
+                /* gap: 50px; */
+            }
+            .form-content {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                height: max-content;
+            }
+            #activity-select {
+                width: 320px;
+            }
+            .password-select {
+                width: 320px;
+            }
+            button {
+                width: 320px;
+            }
+            input, select {
+                width: 320px;
+            }
+        }
+        
+    
+        
+    
+     /* @media screen and (max-width: 480px) {
+        .full-section {
+            flex-direction: column;
+        }
+        .left-section { */
+            /* margin-top: 50px; */
+            /* margin-inline: 100px; */
+             /* width: 200px; 
+             margin-block-start: 190px;
+             margin-block-end: 80px;
+             margin-inline-start: 50px; */
+            /* align-items: center;
+            justify-content: center; */
+        
+        /*
+        .right-section{
+            align-content: center;
+            justify-content: center;
+            margin-top: 10px;
+            max-width: 460px;
+            /* width: 295px; */
+            /* height: 870px;
+        }
+        .form-content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            height: max-content;
+        }
+        #activity-select {
+            width: 295px;
+        }
+        .password-select {
+            width: 295px;
+        }
+        button {
+            width: 295px;
+        }
+        input, select {
+            width: 295px;
+            margin-inline: ;
+        }
+    } */ 
