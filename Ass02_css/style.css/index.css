@@ -34,17 +34,12 @@ main {
 }
 
 .full-section {
-    /* width: 1440px;
-    width: 80%
-    height: 80%
-    height: 840px; */
+  
     display: flex;
     justify-content: center;
     align-items: center;
     
-    /* flex: 1; */
-    /* flex-direction: row;  */
-    /* justify-content: center;   align-items: center; */
+ 
 }
 .left-section {
     margin-inline-start: 140px;
@@ -52,12 +47,12 @@ main {
     margin-block-end: 360px;
     width: 460px;
     height: 275px;
-    /* background-color: rgba(255, 255, 255, 1); */
+   
 
     img {
         height: 80px;
         width: 77px;
-        /* padding: 0; */
+        
     }
 
     h1 {
@@ -88,9 +83,7 @@ main {
     
     padding: 40px;
     flex-shrink: 0;
-    /* margin-inline-start: 120px;
-    margin-inline-end: 140px; */
-    /* margin-block: 80px; */
+   
     box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
 }
  .form-content {
@@ -115,7 +108,7 @@ input,select {
     flex-shrink: 0;
     padding-inline-start: 16px;
     padding-block: 14px;
-    /* border-radius: 0.1px; */
+
 
 }
 
@@ -189,8 +182,7 @@ button {
             flex-direction: column;
         }
         .left-section {
-            /* margin-top: 50px; */
-            /* margin-inline: 100px; */
+         
              width: 500px; 
              margin-block-start: 190px;
              margin-block-end: 80px;
@@ -201,17 +193,16 @@ button {
              }
 
              }
-            /* align-items: center;
-            justify-content: center; */
+          
 
             .right-section{
                 align-content: center;
                 justify-content: center;
                 margin-top: 10px;
                 width: 440px;
-                /* width: 295px; */
+               
                 height: 1048px;
-                /* gap: 50px; */
+             
             }
             .form-content {
                 display: flex;
@@ -233,49 +224,3 @@ button {
             }
         }
         
-    
-        
-    
-     /* @media screen and (max-width: 480px) {
-        .full-section {
-            flex-direction: column;
-        }
-        .left-section { */
-            /* margin-top: 50px; */
-            /* margin-inline: 100px; */
-             /* width: 200px; 
-             margin-block-start: 190px;
-             margin-block-end: 80px;
-             margin-inline-start: 50px; */
-            /* align-items: center;
-            justify-content: center; */
-        
-        /*
-        .right-section{
-            align-content: center;
-            justify-content: center;
-            margin-top: 10px;
-            max-width: 460px;
-            /* width: 295px; */
-            /* height: 870px;
-        }
-        .form-content {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            height: max-content;
-        }
-        #activity-select {
-            width: 295px;
-        }
-        .password-select {
-            width: 295px;
-        }
-        button {
-            width: 295px;
-        }
-        input, select {
-            width: 295px;
-            margin-inline: ;
-        }
-    } */ 
